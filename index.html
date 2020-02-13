@@ -1,49 +1,47 @@
+  
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Flexbox Demo</title>
-  <link rel="stylesheet" href="./c.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Our First Webpage</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Based on https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
-  <div class="container">
-    <header class="header">Header</header>
-    <article class="main">
-      <h2>Main Content</h2>
-      <ul>
-        <li>
-          When in a small screen (width is smaller than 600px), display blocks in the default
-          flexbox styles, using the same grow/shrink setting, from top to bottom. The order is
-          based on their html content positions.
-        </li>
-        <li>
-          When in a medium screen (width is smaller than 800px and is bigger than 600px), set the
-          two asides with "flex: 1 0". Because the "flex-shrink" is 0, its minimum size is its
-          content size. A side effect is that the two asides can be wrapped in one row.
-        </li>
-        <li>
-          When in a large screen (width is bigger than 800px), set the main content with "flex: 3
-          0" and change the aside-1 order to be 1 -- display before the main content. Now all
-          three blocks are in the same row. But main content grows 2 times faster than the two
-          asides.
-        </li>
-        <li>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, culpa
-          necessitatibus
-          laboriosam nulla est voluptates omnis repellendus nam repudiandae sequi, architecto
-          assumenda. Incidunt nam quasi voluptates, aspernatur enim sint aut.
-        </li>
-      </ul>
-    </article>
-    <aside class="aside aside-1">Aside 1</aside>
-    <aside class="aside aside-2">Aside 2</aside>
-    <footer>Footer</footer>
-  </div>
+  <header class="fixed-bar">
+    <h1 class="page-title">Mike's World</h1>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li>Home</li>
+      <li><a href="contact/index.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="trip-text">
+      <p>My SF City Trip</p>
+      <p>The California Landscape</p>
+    </div>
+    <div class="trip-images">
+      <img src="images/sf.png" alt="Image of the San Francisco streets">
+      <img src="images/california.png" alt="Image of the California streets">
+    </div>
+    <p class="feedback">Do people like my Page</p>
+  </main>
+  <footer>
+    <div class="review-clients">
+      <img src="images/image-max.png" alt="Image of Max">
+      <p>Max - Awesome page, great work, keep it up!</p>
+    </div>
+    <div class="review-clients">
+      <img src="images/image-manu.png" alt="Image of Manu">
+      <p>Manu - Looks really nice, beautiful pictures!</p>
+    </div>
+  </footer>
 </body>
 
 </html>
